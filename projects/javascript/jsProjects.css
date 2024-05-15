@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 50px;
+    background-color: antiquewhite;
+    font-family: cursive;
+   
+}
+
+.banner{
+    border: 1px solid black;
+    height: 400px;
+}
+
+.container{
+    font-family: cursive;
+    padding: 30px 60px;
+}
+
+.container h2{
+    margin-bottom: 20px;
+}
