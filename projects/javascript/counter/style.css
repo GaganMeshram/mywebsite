@@ -69,6 +69,21 @@ main {
     background-color: #ff174396;
 }
 
+.back-container{
+      display: flex;
+    height: 30px;
+    /* border: 1px solid black; */
+    align-items: center;
+    padding: 15px 5px;
+}
+.back-btn{
+    font-family: cursive;
+    background-color: rgb(255 90 90 / 76%);
+    color: rgb(0 0 0);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
 
 
 
