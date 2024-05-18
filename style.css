@@ -128,16 +128,22 @@
   height: 200px;
 }
 
-.card-summary{
+.card-summary {
+  font-family: sans-serif;
   border: 1px solid black;
+  border-radius: 6px;
   margin: 20px;
-  /* line-height: 18px; */
-  height: auto;
+  /*line-height: 18px;
+  */height: auto;
   padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 /* Common button */
-.btn{
+.btn {
   color: black;
   text-decoration: none;
   display: inline-block;
@@ -155,9 +161,26 @@
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   cursor: pointer;
-
 }
 
+.rainbow-button {
+  background: linear-gradient(    90deg ,    red,    orange,    yellow,    green,     violet, pink, wheat  );
+  background-size: 200% 200%;
+  animation: rainbowBackground 9s infinite;
+  -webkit-animation: rainbowBackground 9s infinite;
+}
+
+@keyframes rainbowBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 #myVideo {
   object-fit: cover;
