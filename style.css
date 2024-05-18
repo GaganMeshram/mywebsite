@@ -118,28 +118,60 @@
   width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 1px solid black;
+  border: 1px solid #e3e3e3;
   -webkit-border-radius: 20px;
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  box-shadow: 5px 10px #d5c0c0;
 }
-.card-img {
+.card-text {
   height: 200px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background-color: aqua;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.javascript-card{
+  background-color: #fff62173;
+}
+
+.react-card{
+  background-color: #2196f3a1;
+}
+
+.card-text h3{
+  font-family: cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 70px;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+
 }
 
 .card-summary {
   font-family: sans-serif;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 6px;
   margin: 20px;
-  /*line-height: 18px;
-  */height: auto;
+  line-height: 23px;
   padding: 10px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+
 }
 
 /* Common button */
