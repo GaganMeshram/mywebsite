@@ -7,8 +7,44 @@
 .nav {
   height: 50px;
   background-color: black;
-  position: sticky;
+  display: flex;
+  
 }
+
+/* by default hide links */
+.nav-list{
+  height: 0px;
+  overflow: hidden;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+/* toggle class */
+
+.show-links{
+  height: 10rem;
+}
+
+.nav-header{
+  color: white;
+  border: 1px solid white;
+}
+
+@media screen and (min-width:800px) {
+  .nav-center{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+}
+
 
 .nav-list {
   font-weight: 400;
@@ -31,14 +67,16 @@
 
 .banner-text {
   color: white;
-  width: 500px;
+  /* border: 1px solid white; */
+  height: auto;
+  width: 600px;
   position: absolute;
   top: 40%;
   left: 30%;
   transform: translate(-50%, -30%);
   z-index: 1;
   font-family: Arial, sans-serif !important;
-  line-height: 30px;
+  /* line-height: 30px; */
   -webkit-transform: translate(-50%, -30%);
   -moz-transform: translate(-50%, -30%);
   -ms-transform: translate(-50%, -30%);
@@ -46,13 +84,20 @@
 }
 
 .banner-text h2 {
-  font-size: 40px;
+  /* font-size: 40px; */
   font-weight: bold;
+  font-size: 60px;
+
 }
 
 .banner-text h5 {
   margin-top: 10px;
   font-size: 20px;
+}
+
+.banner p{
+  line-height: 20px;
+  margin-top: 10px;
 }
 
 .intro {
